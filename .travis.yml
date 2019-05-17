@@ -21,15 +21,15 @@ after_success:
     - docker push oonurkuru/multi-docker-container-server
     - docker push oonurkuru/multi-docker-container-worker
     
-deploy:
-    provider: elasticbeanstalk
-    region: us-east-1
-    app: multi-docker-container
-    env: MultiDockerContainer-env
-    bucket_name: elasticbeanstalk-us-east-1-033147592748
-    bucket_path: multi-docker-container
-    on:
-        branch: master
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key:
-        secure: $AWS_SECRET_KEY
+#deploy:
+    #provider: elasticbeanstalk
+    #region: us-east-1
+    #app: multi-docker-container
+    #env: MultiDockerContainer-env
+    #bucket_name: elasticbeanstalk-us-east-1-033147592748
+    #bucket_path: multi-docker-container
+    #on:
+        #branch: master
+    #access_key_id: $AWS_ACCESS_KEY
+    #secret_access_key:
+        #secure: $AWS_SECRET_KEY
